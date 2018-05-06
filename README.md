@@ -35,6 +35,22 @@ Building on this, he adds:
 
 > Ruby is simple in appearance, but is very complex inside, just like our human body1.
 
+## Environment on Linux ##
+
+Ruby version:
+
+```bash
+~$ ruby -v
+ruby 2.1.5p273 (2014-11-13) [x86_64-linux-gnu]
+```
+
+Ruby executable path:
+
+```bash
+~$ which ruby
+/usr/bin/ruby
+```
+
 ## How to learn more about Ruby ##
 
 See the References guide.

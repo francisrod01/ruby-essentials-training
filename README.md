@@ -138,6 +138,16 @@ irb(main):005:0> quit
 /home/ruby-apps@debian:~$
 ```
 
+`--simple-prompt` to run as short prompt:
+
+```bash
+/home/ruby-apps@debian:~$ irb --simple-prompt
+>> 1 + 2
+=> 3
+>> quit
+/home/ruby-apps@debian:~$
+```
+
 ## How to learn more about Ruby ##
 
 See the References guide.

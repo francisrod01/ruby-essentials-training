@@ -40,15 +40,102 @@ Building on this, he adds:
 Ruby version:
 
 ```bash
-~$ ruby -v
+ruby-apps@debian:~$ ruby -v
 ruby 2.1.5p273 (2014-11-13) [x86_64-linux-gnu]
 ```
 
 Ruby executable path:
 
 ```bash
-~$ which ruby
+ruby-apps@debian:~$ which ruby
 /usr/bin/ruby
+```
+
+## Using Ruby ##
+
+Three ways to use Ruby:
+
+- Single command
+- Ruby file
+- Interactive Ruby Shell (IRB)
+
+### Using as a Single Command ###
+
+Using `puts` command:
+
+```bash
+/home/ruby-apps@debian:~$ ruby -e 'puts 123'
+123
+/home/ruby-apps@debian:~$
+```
+
+Using `print` command:
+
+```bash
+/home/ruby-apps@debian:~$ ruby -e 'print 123'
+123/home/ruby-apps@debian:~$
+```
+
+### Using as Ruby file ###
+
+Create a `simple_file.rb` ruby file and type as below:
+
+```rb
+puts 123
+print 456
+puts 789
+```
+
+Let's run it:
+
+```bash
+/home/ruby-apps@debian:~$ ruby simple_file.rb
+123
+456789
+/home/ruby-apps@debian:~$
+```
+
+### Using as an Interactive Ruby Shell (IRB) ##
+
+IRB is a command line interface as ruby.
+
+- Allows us to interact with code in real time
+- Works like a calculator
+- Great for testing code
+
+Just run `irb` in a console and see a prompt command line waiting for a command:
+
+```bash
+/home/ruby-apps@debian:~$ irb
+irb(main):001:0>
+```
+
+`irb` seems like a calculator:
+
+```bash
+/home/ruby-apps@debian:~$ irb
+irb(main):001:0> 1 + 1
+=> 2
+irb(main):002:0>
+irb(main):003:0> 45 / 9
+=> 5
+irb(main):004:0>
+```
+
+`puts` commands returns a `nil` value:
+
+```bash
+irb(main):004:0> puts 1 + 2
+3
+=> nil
+irb(main):005:0>
+```
+
+`quit` command to exit it:
+
+```bash
+irb(main):005:0> quit
+/home/ruby-apps@debian:~$
 ```
 
 ## How to learn more about Ruby ##
